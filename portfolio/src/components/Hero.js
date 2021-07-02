@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/social_links"
-// import heroImg from "../assets/images/hero.svg"
+import heroImg from "../assets/images/hero.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 const query = graphql`
@@ -17,9 +17,9 @@ const query = graphql`
 `
 
 const Hero = () => {
-  const data = useStaticQuery(query)
-  const image = data.file.childImageSharp.fluid
-  console.log(image)
+  // const data = useStaticQuery(query)
+  // const image = data.file.childImageSharp.fluid
+  // console.log(image)
   return (
     <header className="hero">
       <div className="section-center hero-center">
@@ -32,7 +32,12 @@ const Hero = () => {
           </Link>
           <SocialLinks />
         </article>
-        <StaticImage fluid={image} className="hero-img" />
+        <StaticImage
+          src="../assets/images/hero.svg"
+          alt="portfolio"
+          className="hero-img"
+          placeholder="blurred"
+        />
       </div>
     </header>
   )
