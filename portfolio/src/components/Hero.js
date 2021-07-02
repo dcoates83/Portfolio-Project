@@ -1,25 +1,10 @@
 import React from "react"
-import { Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import SocialLinks from "../constants/social_links"
-import heroImg from "../assets/images/hero.svg"
+// import heroImg from "../assets/images/hero.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
-const query = graphql`
-  {
-    file(relativePath: { eq: "hero-img.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 const Hero = () => {
-  // const data = useStaticQuery(query)
-  // const image = data.file.childImageSharp.fluid
-  // console.log(image)
   return (
     <header className="hero">
       <div className="section-center hero-center">
