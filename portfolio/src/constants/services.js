@@ -1,23 +1,24 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch, FaBloggerB } from "react-icons/fa"
 const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Designing web pages with attention to accessibility, cross-browser compatibility, search engine optimization and responsiveness. The way it should be.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
     title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `From Design to Production. I'm here to help you with each step of the design.
+    `,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaBloggerB className="service-icon" />,
+    title: "Starting a Blog?",
+    text: `Everybody has a great idea that needs to be shared. Lets' get that Idea into a Reality.`,
   },
 ]
 

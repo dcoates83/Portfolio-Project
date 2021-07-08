@@ -29,7 +29,7 @@ const Jobs = () => {
 
   return (
     <section className="section jobs">
-      <Title title="Experience" />
+      <Title title="Experience & Education" />
       <div className="jobs-center">
         {/* btn container */}
         <div className="btn-container">
