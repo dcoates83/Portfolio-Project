@@ -878,6 +878,9 @@ About Page
 .about-text p {
   line-height: 2;
 }
+.about-text h3 {
+  font-weight: 400;
+}
 .stack-container {
   width: 30rem;
   display: grid;
