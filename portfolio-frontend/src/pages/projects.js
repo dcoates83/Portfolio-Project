@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
+import { Link } from "gatsby"
 const ProjectsPage = ({
   data: {
     allStrapiProjects: { nodes: projects },
@@ -13,6 +14,12 @@ const ProjectsPage = ({
       <Seo title="Projects" description="Projects Page" />
       <section className="projects-page">
         <Projects projects={projects} title="All Projects" />
+        <div className="projects-github">
+          <h3>Want to see my whole github repo?</h3>
+          <Link to="https://github.com/dcoates83" className="btn">
+            Click Me
+          </Link>
+        </div>
       </section>
     </Layout>
   )

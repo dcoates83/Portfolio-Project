@@ -4,9 +4,7 @@ import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   const imageData = getImage(image.localFile)
-  console.log("------------------------------------")
-  console.log(imageData)
-  console.log("------------------------------------")
+
   return (
     <article className="project">
       <GatsbyImage image={imageData} className="project-img" alt={title} />

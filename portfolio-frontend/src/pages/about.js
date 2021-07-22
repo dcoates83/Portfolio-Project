@@ -3,7 +3,9 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
 import Layout from "../components/Layout"
-import heroImg from "../assets/images/hero.svg"
+import resume from "../assets/images/resume.png"
+import SocialLinks from "../constants/social_links"
+import { StaticImage } from "gatsby-plugin-image"
 
 const About = ({
   data: {
@@ -17,7 +19,20 @@ const About = ({
       <Seo title="About" description="About me as a developer" />
       <section className="about-page">
         <div className="section-center about-center">
-          <img src={heroImg} alt="portfolio" className="about-img-svg" />
+          <div className="img-container about-img-svg">
+            <StaticImage
+              src="../assets/images/resume.png"
+              alt="resume"
+              placeholder="blurred"
+              layout="constrained"
+              className="about-img-svg about-resume"
+            />
+            <a href={resume} className="btn about-img-download" download>
+              {" "}
+              Download
+            </a>
+          </div>
+          {/* <img src={resume} alt="portfolio" className="about-img-svg" /> */}
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
@@ -27,6 +42,7 @@ const About = ({
                 return <span key={item.id}>{item.title}</span>
               })}
             </div>
+            <SocialLinks />
           </article>
         </div>
       </section>

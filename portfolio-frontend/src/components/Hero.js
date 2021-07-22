@@ -7,6 +7,7 @@ const Hero = () => {
   return (
     <header className="hero">
       <div className="section-center hero-center">
+        <img src={heroImg} alt="portfolio" className="hero-img-svg" />
         <article className="hero-info">
           <div className="underline"></div>
           <h1>I'm Devon</h1>
@@ -16,7 +17,6 @@ const Hero = () => {
           </Link>
           <SocialLinks />
         </article>
-        <img src={heroImg} alt="portfolio" className="hero-img-svg" />
       </div>
     </header>
   )
